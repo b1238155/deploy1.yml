@@ -1,4 +1,4 @@
-name:  Deploy
+name: Build and Deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,5 +27,3 @@ jobs:
       - name: Deploy
         run: echo "Deploying..."
 
-
-        
